@@ -14,6 +14,8 @@
         <module>concurrent</module>
         <module>springboot</module>
         <module>ioc</module>
+        <module>aop</module>
+        <module>mybatis</module>
     </modules>
 
     <properties>

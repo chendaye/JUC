@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/concurrent/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatislearn/pom.xml" />
       </set>
     </option>
   </component>

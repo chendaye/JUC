@@ -10,10 +10,12 @@
         <module name="springboot" />
         <module name="spring" />
         <module name="springcloud" />
+        <module name="aop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="concurrent" target="1.8" />
+      <module name="mybatislearn" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

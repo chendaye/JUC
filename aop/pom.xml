@@ -9,10 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ioc</artifactId>
+    <artifactId>aop</artifactId>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -24,7 +23,12 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
-
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.4</version>
+        </dependency>
     </dependencies>
+
+
 </project>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- services -->
+
+<!--    <bean id="petStore" class="org.springframework.samples.jpetstore.services.PetStoreServiceImpl">-->
+<!--        <property name="accountDao" ref="accountDao"/>-->
+<!--        <property name="itemDao" ref="itemDao"/>-->
+<!--        &lt;!&ndash; additional collaborators and configuration for this bean go here &ndash;&gt;-->
+<!--    </bean>-->
+
+    <!-- more bean definitions for services go here -->
+
+<!--    spring 创建对象
+    类型 变量名  = new 类型();
+    id => 变量名
+    class => 要实例的对象
+    property => 对象属性值
+-->
+    <bean id="Hello" class="top.chendaye666.step03.setter.Hello">
+        <property name="str" value="chendaye666"/>
+    </bean>
+
+    <bean id="userMysqlDaoImpl" class="top.chendaye666.step02.dao.UserMysqlDaoImpl"/>
+    <bean id="userServiceImpl" class="top.chendaye666.step02.service.UserServiceImpl">
+<!--        ref ：引用 spring 容器中的其他对象
+            value： 是基本的值
+  -->
+        <property name="userDao" ref="userMysqlDaoImpl"/>
+    </bean>
+
+<!--    用无参构造 实例化类-->
+    <bean id="user" class="top.chendaye666.step03.createObj.User">
+        <property name="name" value="chendaye666"/>
+    </bean>
+
+<!--    有参构造实例化类-->
+    <bean id="user2" class="top.chendaye666.step03.createObj.User" name="alias-1,alias-2">
+<!--        用参数位置赋值-->
+<!--        <constructor-arg index="0" value="chendaye666"/>-->
+<!--        用参数类型赋值-->
+<!--        <constructor-arg type="java.lang.String" value="chendaye666"/>-->
+<!--        通过参数名-->
+        <constructor-arg name="name" value="chendaye"/>
+    </bean>
+<!--    取别名-->
+    <alias name="user2" alias="user3-alias"/>
+
+<!--    导入合并其他配置文件-->
+<!--    <import resource="beans.xml"/>-->
+
+
+<!--    复杂依赖注入 scope bean的作用域-->
+    <bean id="address" class="top.chendaye666.step03.di.Address" scope="singleton"/>
+    <bean id="address2" class="top.chendaye666.step03.di.Address" scope="prototype"/>
+    <bean id="address3" class="top.chendaye666.step03.di.Address" scope="request"/>
+    <bean id="address4" class="top.chendaye666.step03.di.Address" scope="session"/>
+    <bean id="student" class="top.chendaye666.step03.di.Student">
+<!--        setter 注入-->
+        <property name="name" value="chendaye"/>
+<!--        ref 注入 对象-->
+        <property name="address" ref="address"/>
+<!--注入数组-->
+        <property name="books">
+            <array>
+                <value>book1</value>
+                <value>book2</value>
+            </array>
+        </property>
+<!--        注入 List-->
+        <property name="hobbies">
+            <list>
+                <value>list2</value>
+                <value>list3</value>
+            </list>
+        </property>
+<!--注入与map-->
+        <property name="card">
+            <map>
+                <entry key="k1" value="v1"/>
+                <entry key="k2" value="v2"/>
+            </map>
+        </property>
+
+<!--        注入set-->
+        <property name="games">
+            <set>
+                <value>ste1</value>
+                <value>ste2</value>
+            </set>
+        </property>
+
+<!--        注入 null-->
+        <property name="wife">
+            <null/>
+        </property>
+<!--注入 property-->
+        <property name="info">
+            <props >
+                <prop key="p1">v1</prop>
+                <prop key="p2">v2</prop>
+            </props>
+        </property>
+    </bean>
+
+
+<!--    自动装配-->
+    <bean id="dog" class="top.chendaye666.step03.autowried.Dog"/>
+    <bean id="cat" class="top.chendaye666.step03.autowried.Cat"/>
+<!--    <bean id="people" class="top.chendaye666.step03.autowried.People">-->
+<!--        <property name="name" value="陈"/>-->
+<!--        <property name="cat" ref="cat"/>-->
+<!--        <property name="dog" ref="dog"/>-->
+<!--    </bean>-->
+
+<!--    byName 自动找 setName() 中的Name 去匹配 bean-->
+    <bean id="people" class="top.chendaye666.step03.autowried.People" autowire="byName">
+        <property name="name" value="陈"/>
+    </bean>
+
+</beans>
