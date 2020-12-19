@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+<!--    关联数据库配置文件-->
+    <context:property-placeholder location="classpath:database.properties"/>
+<!--    连接池
+        dbcp:半自动化操作
+        c3p0：自动化操作，自动加载配置文件，自动设置到对象中
+        druid：
+        hikari
+-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="user" value="${jdbc.username}"/>
+
+<!--        c3p0 特有属性-->
+        <property name="maxPoolSize" value="30"/>
+        <property name="minPoolSize" value="3"/>
+<!--        关闭连接后不自动 commit-->
+        <property name="autoCommitOnClose" value="false"/>
+<!--       超时连接时间 -->
+        <property name="checkoutTimeout" value="1000"/>
+<!--        重连次数-->
+        <property name="acquireRetryAttempts" value="2"/>
+    </bean>
+
+
+
+<!--    sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+<!--        绑定 mybatis 配置文件-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+    </bean>
+<!--配置 dao 接口扫描包 动态实现Dao接口注入到spring容器中-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<!--        注入sqlSessionFactory-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+<!--        要扫描的dao包-->
+        <property name="basePackage" value="top.chendaye666.dao"/>
+    </bean>
+
+</beans>

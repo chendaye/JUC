@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/concurrent/pom.xml" />
         <option value="$PROJECT_DIR$/mybatislearn/pom.xml" />
         <option value="$PROJECT_DIR$/sevlet/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/pom.xml" />
       </set>
     </option>
   </component>
