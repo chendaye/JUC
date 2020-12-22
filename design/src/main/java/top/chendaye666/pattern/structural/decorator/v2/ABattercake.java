@@ -1,0 +1,10 @@
+package top.chendaye666.pattern.structural.decorator.v2;
+
+/**
+ * Created by geely
+ */
+public abstract class ABattercake {
+    protected abstract String getDesc();
+    protected abstract int cost();
+
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>top.chendaye666.principle.dependenceinversion</OriginalElement>
+  <nodes>
+    <node x="380.0" y="109.0">top.chendaye666.principle.dependenceinversion.JavaCourse</node>
+    <node x="181.0" y="109.0">top.chendaye666.principle.dependenceinversion.PythonCourse</node>
+    <node x="242.0" y="213.0">top.chendaye666.principle.dependenceinversion.Test</node>
+    <node x="190.0" y="0.0">top.chendaye666.principle.dependenceinversion.ICourse</node>
+    <node x="0.0" y="213.0">top.chendaye666.principle.dependenceinversion.Geely</node>
+    <node x="0.0" y="109.0">top.chendaye666.principle.dependenceinversion.FECourse</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="top.chendaye666.principle.dependenceinversion.PythonCourse" target="top.chendaye666.principle.dependenceinversion.ICourse">
+      <point x="0.0" y="-29.5" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="top.chendaye666.principle.dependenceinversion.JavaCourse" target="top.chendaye666.principle.dependenceinversion.ICourse">
+      <point x="0.0" y="-29.5" />
+      <point x="460.5" y="84.0" />
+      <point x="324.16666666666663" y="84.0" />
+      <point x="53.66666666666663" y="29.5" />
+    </edge>
+    <edge source="top.chendaye666.principle.dependenceinversion.FECourse" target="top.chendaye666.principle.dependenceinversion.ICourse">
+      <point x="0.0" y="-29.5" />
+      <point x="80.5" y="84.0" />
+      <point x="216.83333333333334" y="84.0" />
+      <point x="-53.66666666666666" y="29.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="255.5" y="133.0" />
+  <SelectedNodes>
+    <node>top.chendaye666.principle.dependenceinversion.FECourse</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -20,6 +20,7 @@
         <module>springmvc-annotation</module>
         <module>springmvc-ssm</module>
         <module>springboot</module>
+        <module>design</module>
     </modules>
 
     <properties>

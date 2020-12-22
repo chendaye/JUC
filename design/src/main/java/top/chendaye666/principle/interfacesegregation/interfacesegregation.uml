@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>top.chendaye666.principle.interfacesegregation</OriginalElement>
+  <nodes>
+    <node x="48.5" y="316.0">top.chendaye666.principle.interfacesegregation.Bird</node>
+    <node x="234.0" y="209.0">top.chendaye666.principle.interfacesegregation.IFlyAnimalAction</node>
+    <node x="242.0" y="0.0">top.chendaye666.principle.interfacesegregation.ISwimAnimalAction</node>
+    <node x="0.0" y="0.0">top.chendaye666.principle.interfacesegregation.IEatAnimalAction</node>
+    <node x="0.0" y="209.0">top.chendaye666.principle.interfacesegregation.IAnimalAction</node>
+    <node x="194.25" y="107.0">top.chendaye666.principle.interfacesegregation.Dog</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="top.chendaye666.principle.interfacesegregation.Dog" target="top.chendaye666.principle.interfacesegregation.IEatAnimalAction">
+      <point x="-20.25" y="-28.5" />
+      <point x="214.5" y="82.0" />
+      <point x="111.0" y="82.0" />
+      <point x="0.0" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.principle.interfacesegregation.Dog" target="top.chendaye666.principle.interfacesegregation.ISwimAnimalAction">
+      <point x="20.25" y="-28.5" />
+      <point x="255.0" y="82.0" />
+      <point x="358.5" y="82.0" />
+      <point x="0.0" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.principle.interfacesegregation.Bird" target="top.chendaye666.principle.interfacesegregation.IAnimalAction">
+      <point x="0.0" y="-28.5" />
+      <point x="0.0" y="28.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="237.5" y="186.5" />
+  <SelectedNodes>
+    <node>top.chendaye666.principle.interfacesegregation.IAnimalAction</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

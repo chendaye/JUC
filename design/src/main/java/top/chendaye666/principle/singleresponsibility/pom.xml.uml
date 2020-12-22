@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>top.chendaye666.principle.singleresponsibility</OriginalElement>
+  <nodes>
+    <node x="234.0" y="302.0">top.chendaye666.principle.singleresponsibility.WalkBird</node>
+    <node x="0.0" y="515.0">top.chendaye666.principle.singleresponsibility.Method</node>
+    <node x="561.0" y="515.0">top.chendaye666.principle.singleresponsibility.Bird</node>
+    <node x="144.5" y="411.0">top.chendaye666.principle.singleresponsibility.Test</node>
+    <node x="0.0" y="0.0">top.chendaye666.principle.singleresponsibility.ICourseContent</node>
+    <node x="220.0" y="0.0">top.chendaye666.principle.singleresponsibility.ICourseManager</node>
+    <node x="0.0" y="302.0">top.chendaye666.principle.singleresponsibility.FlyBird</node>
+    <node x="127.0" y="131.0">top.chendaye666.principle.singleresponsibility.CourseImpl</node>
+    <node x="350.0" y="515.0">top.chendaye666.principle.singleresponsibility.ICourse</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="top.chendaye666.principle.singleresponsibility.Test" target="top.chendaye666.principle.singleresponsibility.WalkBird">
+      <point x="19.875" y="-29.5" />
+      <point x="243.875" y="381.0" />
+      <point x="287.5" y="381.0" />
+      <point x="-53.5" y="29.5" />
+    </edge>
+    <edge source="top.chendaye666.principle.singleresponsibility.CourseImpl" target="top.chendaye666.principle.singleresponsibility.ICourseContent">
+      <point x="-41.5" y="-63.0" />
+      <point x="168.5" y="106.0" />
+      <point x="100.0" y="106.0" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="top.chendaye666.principle.singleresponsibility.CourseImpl" target="top.chendaye666.principle.singleresponsibility.ICourseManager">
+      <point x="41.5" y="-63.0" />
+      <point x="251.5" y="106.0" />
+      <point x="320.0" y="106.0" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="top.chendaye666.principle.singleresponsibility.Test" target="top.chendaye666.principle.singleresponsibility.FlyBird">
+      <point x="-19.875" y="-29.5" />
+      <point x="204.125" y="381.0" />
+      <point x="160.5" y="381.0" />
+      <point x="53.5" y="29.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="210.0" y="235.0" />
+  <SelectedNodes>
+    <node>top.chendaye666.principle.singleresponsibility.WalkBird</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
