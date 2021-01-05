@@ -1,7 +1,5 @@
 package top.chendaye666.pattern.creational.singleton;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,7 +14,7 @@ public class ContainerSingleton {
     private static Map<String,Object> singletonMap = new HashMap<String,Object>();
 
     public static void putInstance(String key,Object instance){
-        if(StringUtils.isNotBlank(key) && instance != null){
+        if(key != null && instance != null){
             if(!singletonMap.containsKey(key)){
                 singletonMap.put(key,instance);
             }

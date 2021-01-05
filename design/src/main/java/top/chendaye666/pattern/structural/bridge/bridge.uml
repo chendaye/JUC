@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>top.chendaye666.pattern.structural.bridge</OriginalElement>
+  <nodes>
+    <node x="108.25" y="259.0">top.chendaye666.pattern.structural.bridge.Account</node>
+    <node x="0.0" y="132.0">top.chendaye666.pattern.structural.bridge.ICBCBank</node>
+    <node x="0.0" y="390.0">top.chendaye666.pattern.structural.bridge.SavingAccount</node>
+    <node x="458.0" y="259.0">top.chendaye666.pattern.structural.bridge.Test</node>
+    <node x="104.0" y="0.0">top.chendaye666.pattern.structural.bridge.Bank</node>
+    <node x="208.0" y="132.0">top.chendaye666.pattern.structural.bridge.ABCBank</node>
+    <node x="213.0" y="390.0">top.chendaye666.pattern.structural.bridge.DepositAccount</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="top.chendaye666.pattern.structural.bridge.ICBCBank" target="top.chendaye666.pattern.structural.bridge.Bank">
+      <point x="0.0" y="-41.0" />
+      <point x="94.0" y="107.0" />
+      <point x="151.0" y="107.0" />
+      <point x="-47.0" y="41.0" />
+    </edge>
+    <edge source="top.chendaye666.pattern.structural.bridge.SavingAccount" target="top.chendaye666.pattern.structural.bridge.Account">
+      <point x="0.0" y="-40.5" />
+      <point x="96.5" y="365.0" />
+      <point x="156.5" y="365.0" />
+      <point x="-48.25" y="40.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.structural.bridge.ABCBank" target="top.chendaye666.pattern.structural.bridge.Bank">
+      <point x="0.0" y="-41.0" />
+      <point x="302.0" y="107.0" />
+      <point x="245.0" y="107.0" />
+      <point x="47.0" y="41.0" />
+    </edge>
+    <edge source="top.chendaye666.pattern.structural.bridge.DepositAccount" target="top.chendaye666.pattern.structural.bridge.Account">
+      <point x="0.0" y="-40.5" />
+      <point x="313.0" y="365.0" />
+      <point x="253.0" y="365.0" />
+      <point x="48.25" y="40.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="207.9999999999999" y="186.5" />
+  <SelectedNodes>
+    <node>top.chendaye666.pattern.structural.bridge.ICBCBank</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

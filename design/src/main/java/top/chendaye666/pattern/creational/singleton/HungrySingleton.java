@@ -3,7 +3,8 @@ package top.chendaye666.pattern.creational.singleton;
 import java.io.Serializable;
 
 /**
- * Created by geely
+ * 类加载时就创建好了。 也不存在多线程下的问题
+ * 比较消耗资源
  */
 public class HungrySingleton implements Serializable,Cloneable{
 
@@ -21,6 +22,7 @@ public class HungrySingleton implements Serializable,Cloneable{
         return hungrySingleton;
     }
 
+    //todo: 防止 对象 序列化之后 再反序列化 得到不同对象。 序列化通过反射创建对象
     private Object readResolve(){
         return hungrySingleton;
     }

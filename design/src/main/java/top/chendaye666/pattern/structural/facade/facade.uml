@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>top.chendaye666.pattern.structural.facade</OriginalElement>
+  <nodes>
+    <node x="0.0" y="107.0">top.chendaye666.pattern.structural.facade.QualifyService</node>
+    <node x="451.0" y="107.0">top.chendaye666.pattern.structural.facade.PointsPaymentService</node>
+    <node x="220.0" y="107.0">top.chendaye666.pattern.structural.facade.ShippingService</node>
+    <node x="198.5" y="0.0">top.chendaye666.pattern.structural.facade.GiftExchangeService</node>
+    <node x="202.0" y="209.0">top.chendaye666.pattern.structural.facade.Test</node>
+    <node x="0.0" y="209.0">top.chendaye666.pattern.structural.facade.PointsGift</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="top.chendaye666.pattern.structural.facade.PointsPaymentService" target="top.chendaye666.pattern.structural.facade.GiftExchangeService">
+      <point x="0.0" y="-28.5" />
+      <point x="583.5" y="82.0" />
+      <point x="410.1666666666667" y="82.0" />
+      <point x="84.66666666666669" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.structural.facade.ShippingService" target="top.chendaye666.pattern.structural.facade.GiftExchangeService">
+      <point x="0.0" y="-28.5" />
+      <point x="0.0" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.structural.facade.QualifyService" target="top.chendaye666.pattern.structural.facade.GiftExchangeService">
+      <point x="0.0" y="-28.5" />
+      <point x="100.0" y="82.0" />
+      <point x="240.83333333333331" y="82.0" />
+      <point x="-84.66666666666669" y="28.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="201.0" y="232.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

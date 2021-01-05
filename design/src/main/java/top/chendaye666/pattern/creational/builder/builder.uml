@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>top.chendaye666.pattern.creational.builder</OriginalElement>
+  <nodes>
+    <node x="0.0" y="107.0">top.chendaye666.pattern.creational.builder.CourseActualBuilder</node>
+    <node x="0.0" y="311.0">top.chendaye666.pattern.creational.builder.Coach</node>
+    <node x="0.0" y="209.0">top.chendaye666.pattern.creational.builder.v2</node>
+    <node x="32.5" y="0.0">top.chendaye666.pattern.creational.builder.CourseBuilder</node>
+    <node x="186.0" y="209.0">top.chendaye666.pattern.creational.builder.Course</node>
+    <node x="148.0" y="311.0">top.chendaye666.pattern.creational.builder.Test</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="top.chendaye666.pattern.creational.builder.CourseActualBuilder" target="top.chendaye666.pattern.creational.builder.CourseBuilder">
+      <point x="0.0" y="-28.5" />
+      <point x="0.0" y="28.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="150.0" y="184.0" />
+  <SelectedNodes>
+    <node>top.chendaye666.pattern.creational.builder.CourseBuilder</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

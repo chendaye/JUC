@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>top.chendaye666.pattern.creational.factorymethod</OriginalElement>
+  <nodes>
+    <node x="332.0" y="316.0">top.chendaye666.pattern.creational.factorymethod.JavaVideo</node>
+    <node x="484.0" y="107.0">top.chendaye666.pattern.creational.factorymethod.JavaVideoFactory</node>
+    <node x="252.5" y="0.0">top.chendaye666.pattern.creational.factorymethod.VideoFactory</node>
+    <node x="220.0" y="107.0">top.chendaye666.pattern.creational.factorymethod.PythonVideoFactory</node>
+    <node x="0.0" y="107.0">top.chendaye666.pattern.creational.factorymethod.FEVideoFactory</node>
+    <node x="523.0" y="209.0">top.chendaye666.pattern.creational.factorymethod.Test</node>
+    <node x="144.0" y="316.0">top.chendaye666.pattern.creational.factorymethod.PythonVideo</node>
+    <node x="0.0" y="316.0">top.chendaye666.pattern.creational.factorymethod.FEVideo</node>
+    <node x="176.5" y="209.0">top.chendaye666.pattern.creational.factorymethod.Video</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="top.chendaye666.pattern.creational.factorymethod.JavaVideoFactory" target="top.chendaye666.pattern.creational.factorymethod.VideoFactory">
+      <point x="0.0" y="-28.5" />
+      <point x="595.0" y="82.0" />
+      <point x="401.66666666666663" y="82.0" />
+      <point x="59.66666666666663" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.creational.factorymethod.PythonVideoFactory" target="top.chendaye666.pattern.creational.factorymethod.VideoFactory">
+      <point x="0.0" y="-28.5" />
+      <point x="0.0" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.creational.factorymethod.PythonVideo" target="top.chendaye666.pattern.creational.factorymethod.Video">
+      <point x="0.0" y="-28.5" />
+      <point x="0.0" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.creational.factorymethod.JavaVideo" target="top.chendaye666.pattern.creational.factorymethod.Video">
+      <point x="0.0" y="-28.5" />
+      <point x="405.0" y="291.0" />
+      <point x="262.33333333333337" y="291.0" />
+      <point x="34.33333333333337" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.creational.factorymethod.FEVideo" target="top.chendaye666.pattern.creational.factorymethod.Video">
+      <point x="0.0" y="-28.5" />
+      <point x="62.0" y="291.0" />
+      <point x="193.66666666666666" y="291.0" />
+      <point x="-34.33333333333334" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.creational.factorymethod.FEVideoFactory" target="top.chendaye666.pattern.creational.factorymethod.VideoFactory">
+      <point x="0.0" y="-28.5" />
+      <point x="100.0" y="82.0" />
+      <point x="282.3333333333333" y="82.0" />
+      <point x="-59.666666666666686" y="28.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="353.0" y="186.5" />
+  <SelectedNodes>
+    <node>top.chendaye666.pattern.creational.factorymethod.Video</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

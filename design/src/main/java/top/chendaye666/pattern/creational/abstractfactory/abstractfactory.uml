@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>top.chendaye666.pattern.creational.abstractfactory</OriginalElement>
+  <nodes>
+    <node x="131.75" y="209.0">top.chendaye666.pattern.creational.abstractfactory.Article</node>
+    <node x="0.0" y="316.0">top.chendaye666.pattern.creational.abstractfactory.PythonArticle</node>
+    <node x="0.0" y="525.0">top.chendaye666.pattern.creational.abstractfactory.PythonVideo</node>
+    <node x="209.0" y="316.0">top.chendaye666.pattern.creational.abstractfactory.JavaArticle</node>
+    <node x="188.0" y="525.0">top.chendaye666.pattern.creational.abstractfactory.JavaVideo</node>
+    <node x="379.0" y="418.0">top.chendaye666.pattern.creational.abstractfactory.Test</node>
+    <node x="153.75" y="0.0">top.chendaye666.pattern.creational.abstractfactory.CourseFactory</node>
+    <node x="0.0" y="107.0">top.chendaye666.pattern.creational.abstractfactory.JavaCourseFactory</node>
+    <node x="121.0" y="418.0">top.chendaye666.pattern.creational.abstractfactory.Video</node>
+    <node x="253.0" y="107.0">top.chendaye666.pattern.creational.abstractfactory.PythonCourseFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="top.chendaye666.pattern.creational.abstractfactory.JavaArticle" target="top.chendaye666.pattern.creational.abstractfactory.Article">
+      <point x="0.0" y="-28.5" />
+      <point x="293.0" y="291.0" />
+      <point x="224.75" y="291.0" />
+      <point x="31.0" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.creational.abstractfactory.PythonVideo" target="top.chendaye666.pattern.creational.abstractfactory.Video">
+      <point x="0.0" y="-28.5" />
+      <point x="84.0" y="500.0" />
+      <point x="146.75" y="500.0" />
+      <point x="-25.75" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.creational.abstractfactory.JavaVideo" target="top.chendaye666.pattern.creational.abstractfactory.Video">
+      <point x="0.0" y="-28.5" />
+      <point x="261.0" y="500.0" />
+      <point x="198.25" y="500.0" />
+      <point x="25.75" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.creational.abstractfactory.JavaCourseFactory" target="top.chendaye666.pattern.creational.abstractfactory.CourseFactory">
+      <point x="0.0" y="-28.5" />
+      <point x="116.5" y="82.0" />
+      <point x="201.0" y="82.0" />
+      <point x="-47.25" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.creational.abstractfactory.PythonCourseFactory" target="top.chendaye666.pattern.creational.abstractfactory.CourseFactory">
+      <point x="0.0" y="-28.5" />
+      <point x="380.0" y="82.0" />
+      <point x="295.5" y="82.0" />
+      <point x="47.25" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.creational.abstractfactory.PythonArticle" target="top.chendaye666.pattern.creational.abstractfactory.Article">
+      <point x="0.0" y="-28.5" />
+      <point x="94.5" y="291.0" />
+      <point x="162.75" y="291.0" />
+      <point x="-31.0" y="28.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="253.5" y="291.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

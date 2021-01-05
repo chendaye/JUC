@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>top.chendaye666.pattern.structural.decorator.v2</OriginalElement>
+  <nodes>
+    <node x="83.25" y="107.0">top.chendaye666.pattern.structural.decorator.v2.AbstractDecorator</node>
+    <node x="0.0" y="214.0">top.chendaye666.pattern.structural.decorator.v2.EggDecorator</node>
+    <node x="223.25" y="0.0">top.chendaye666.pattern.structural.decorator.v2.ABattercake</node>
+    <node x="0.0" y="316.0">top.chendaye666.pattern.structural.decorator.v2.Test</node>
+    <node x="199.0" y="214.0">top.chendaye666.pattern.structural.decorator.v2.SausageDecorator</node>
+    <node x="336.25" y="107.0">top.chendaye666.pattern.structural.decorator.v2.Battercake</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="top.chendaye666.pattern.structural.decorator.v2.SausageDecorator" target="top.chendaye666.pattern.structural.decorator.v2.AbstractDecorator">
+      <point x="0.0" y="-28.5" />
+      <point x="310.0" y="189.0" />
+      <point x="258.0" y="189.0" />
+      <point x="58.25" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.structural.decorator.v2.Battercake" target="top.chendaye666.pattern.structural.decorator.v2.ABattercake">
+      <point x="0.0" y="-28.5" />
+      <point x="414.75" y="82.0" />
+      <point x="349.25" y="82.0" />
+      <point x="42.0" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.structural.decorator.v2.EggDecorator" target="top.chendaye666.pattern.structural.decorator.v2.AbstractDecorator">
+      <point x="0.0" y="-28.5" />
+      <point x="89.5" y="189.0" />
+      <point x="141.5" y="189.0" />
+      <point x="-58.25" y="28.5" />
+    </edge>
+    <edge source="top.chendaye666.pattern.structural.decorator.v2.AbstractDecorator" target="top.chendaye666.pattern.structural.decorator.v2.ABattercake">
+      <point x="0.0" y="-28.5" />
+      <point x="199.75" y="82.0" />
+      <point x="265.25" y="82.0" />
+      <point x="-42.0" y="28.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="247.0" y="186.5" />
+  <SelectedNodes>
+    <node>top.chendaye666.pattern.structural.decorator.v2.Battercake</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

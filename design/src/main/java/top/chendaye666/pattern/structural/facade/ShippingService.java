@@ -3,7 +3,7 @@ package top.chendaye666.pattern.structural.facade;
 /**
  * Created by geely
  */
-public class ShippingService {
+public class ShippingService extends GiftExchangeService {
     public String shipGift(PointsGift pointsGift){
         //物流系统的对接逻辑
         System.out.println(pointsGift.getName()+"进入物流系统");

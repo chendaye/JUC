@@ -4,6 +4,7 @@ package top.chendaye666.pattern.creational.singleton;
  * Created by geely
  */
 public class LazyDoubleCheckSingleton {
+    // volatile 禁止重排序 对象引用 指向内存地址 和 初始化 不会顺序颠倒
     private volatile static LazyDoubleCheckSingleton lazyDoubleCheckSingleton = null;
     private LazyDoubleCheckSingleton(){
 
