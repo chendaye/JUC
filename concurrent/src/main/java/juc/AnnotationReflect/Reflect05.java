@@ -30,8 +30,8 @@ public class Reflect05 {
         User user4 = (User) c1.newInstance();
         Field age = c1.getDeclaredField("age");
         age.setAccessible(true); // 关掉权限检测； 不能直接操作私有属性
-         age.set(user4, 21);
+        age.set(user4, 21);
 
-         System.out.println(user4.getAge());
+        System.out.println(user4.getAge());
     }
 }
