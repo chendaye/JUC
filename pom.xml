@@ -21,6 +21,7 @@
         <module>springmvc-ssm</module>
         <module>springboot</module>
         <module>design</module>
+        <module>springmvc-mall</module>
     </modules>
 
     <properties>
