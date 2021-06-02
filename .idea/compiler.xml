@@ -9,13 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springmvc-ssm" />
         <module name="ioc" />
-        <module name="springmvc-annotation" />
+        <module name="springmvc-bean" />
         <module name="springboot" />
         <module name="springmvc-servlet" />
         <module name="spring" />
         <module name="springcloud" />
         <module name="aop" />
-        <module name="springmvc-bean" />
+        <module name="springmvc-annotation" />
         <module name="design" />
       </profile>
     </annotationProcessing>

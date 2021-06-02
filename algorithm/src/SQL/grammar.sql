@@ -56,7 +56,7 @@ score 表
  -- 在求出每个学生排序的基础上，汇总结果
  select stu_id, score_order
  from (select stu_id, rank() over (partition by stu_id order by score desc) as score_order from score) as t
- where score <= 4
+ where score_order <= 4
 
  /*
  uuid city ip date
@@ -121,6 +121,8 @@ score
 +--------+-----------+-------+-----------+------+
  */
 -- 查询前1名同学的成绩和当前同学成绩的差值
+
+-- 总结：任何问题，都是通过构建子表，也就是在一行记录的基础上增加列元素；最后在新表上统计
 
 -- 先得到前一名同学的成绩
 select stu_id, score, lag(score, 1) over (order by score) as pre from score
