@@ -241,4 +241,22 @@ public class ProductServiceImpl implements IProductService {
         pageInfo.setList(productListVoList);
         return ServerResponse.createBySuccess(pageInfo);
     }
+
+    @Override
+    public ServerResponse<PageInfo> getProductList(int pageNum,int pageSize){
+        //startPage--start
+        //填充自己的sql查询逻辑
+        //pageHelper-收尾
+        PageHelper.startPage(pageNum,pageSize);
+        List<Product> productList = productMapper.selectList();
+
+        List<ProductListVo> productListVoList = Lists.newArrayList();
+        for(Product productItem : productList){
+            ProductListVo productListVo = assembleProductListVo(productItem);
+            productListVoList.add(productListVo);
+        }
+        PageInfo pageResult = new PageInfo(productList);
+        pageResult.setList(productListVoList);
+        return ServerResponse.createBySuccess(pageResult);
+    }
 }
