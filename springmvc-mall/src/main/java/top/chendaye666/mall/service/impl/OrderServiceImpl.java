@@ -258,6 +258,7 @@ public class OrderServiceImpl implements IOrderService {
         for(Cart cartItem : cartList){
             OrderItem orderItem = new OrderItem();
             Product product = productMapper.selectByPrimaryKey(cartItem.getProductId());
+            // 当前产品是否上架
             if(Const.ProductStatusEnum.ON_SALE.getCode() != product.getStatus()){
                 return ServerResponse.createByErrorMessage("产品"+product.getName()+"不是在线售卖状态");
             }
@@ -274,7 +275,7 @@ public class OrderServiceImpl implements IOrderService {
             orderItem.setCurrentUnitPrice(product.getPrice());
             orderItem.setQuantity(cartItem.getQuantity());
             orderItem.setTotalPrice(BigDecimalUtil.mul(product.getPrice().doubleValue(),cartItem.getQuantity()));
-            orderItemList.add(orderItem);
+            orderItemList.add(orderItem); // 插入订单产品+
         }
         return ServerResponse.createBySuccess(orderItemList);
     }
