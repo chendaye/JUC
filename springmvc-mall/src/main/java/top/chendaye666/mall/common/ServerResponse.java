@@ -66,14 +66,14 @@ public class ServerResponse<T> implements Serializable {
         return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(), msg, data);
     }
 
-    public static <T> ServerResponse<T> ceateByError(){
+    public static <T> ServerResponse<T> createByError(){
         return new ServerResponse<T>(ResponseCode.ERROR.getCode(), ResponseCode.ERROR.getDesc());
     }
 
-    public static <T> ServerResponse<T> ceateByErrorMessage(String error){
+    public static <T> ServerResponse<T> createByErrorMessage(String error){
         return new ServerResponse<T>(ResponseCode.ERROR.getCode(), error);
     }
-    public static <T> ServerResponse<T> ceateByErrorCodeMessage(int code, String error){
+    public static <T> ServerResponse<T> createByErrorCodeMessage(int code, String error){
         return new ServerResponse<T>(code, error);
     }
 }
