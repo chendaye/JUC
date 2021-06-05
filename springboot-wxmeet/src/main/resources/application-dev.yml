@@ -2,14 +2,14 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf-8&useSSL=false
+    password: lengo
+    url: jdbc:mysql://hadoop01:3306/wxmeet?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
   jackson:
     default-property-inclusion: non_null
   redis:
-    host: 127.0.0.1
+    host: hadoop01
     port: 6379
 #logging:
 #  pattern:
@@ -55,5 +55,5 @@ upyun:
   imageHost: http://xxx.com/
 server:
   servlet:
-    context-path: /sell
+    context-path: /sell # url 的前缀
     
