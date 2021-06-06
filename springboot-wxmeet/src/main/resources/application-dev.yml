@@ -7,7 +7,7 @@ spring:
   jpa:
     show-sql: true
   jackson:
-    default-property-inclusion: non_null
+    default-property-inclusion: non_null # 空字段不返回前端
   redis:
     host: hadoop01
     port: 6379
@@ -17,7 +17,7 @@ spring:
 ##  path: /var/log/tomcat/
 #  file: /var/log/tomcat/sell.log
 #  level:
-#    com.imooc.LoggerTest: debug
+#    top.chendaye666.springbootwxmeet.LoggerTest: debug
 
 wechat:
   # 公众账号, 授权
@@ -43,7 +43,7 @@ projectUrl:
   sell: http://lsx888.natapp1.cc
 logging:
   level:
-    com.imooc.dataobject.mapper: trace
+    top.chendaye666.springbootwxmeet.dataobject.mapper: trace
 mybatis:
   mapper-locations: classpath:mapper/*.xml
 

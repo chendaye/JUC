@@ -6,7 +6,7 @@ import lombok.Getter;
  * 用枚举类型来保存 项目中的状态
  */
 @Getter // 生成getter
-public enum ProductStatusEnum {
+public enum ProductStatusEnum implements CodeEnum {
     UP(0, "在架"),
     DOWN(1, "下架")
     ;

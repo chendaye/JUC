@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
+import top.chendaye666.springbootwxmeet.enums.CodeEnum;
+import top.chendaye666.springbootwxmeet.enums.ProductStatusEnum;
+import top.chendaye666.springbootwxmeet.utils.EnumUtil;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -42,8 +45,7 @@ public class ProductInfo implements Serializable {
     private String productIcon;
 
     /** 状态, 0正常1下架. */
-//    private Integer productStatus = ProductStatusEnum.UP.getCode();
-    private Integer productStatus;
+    private Integer productStatus = ProductStatusEnum.UP.getCode();
 
     /** 类目编号. */
     private Integer categoryType;
@@ -52,5 +54,28 @@ public class ProductInfo implements Serializable {
 
     private Date updateTime;
 
+    @JsonIgnore
+    public ProductStatusEnum getProductStatusEnum() {
+        return EnumUtil.getByCode(productStatus, ProductStatusEnum.class);
+    }
 
+    /**
+     * 图片链接加host拼接成完整 url
+     * @param host
+     * @return
+     */
+    public ProductInfo addImageHost(String host) {
+        if (productIcon.startsWith("//") || productIcon.startsWith("http")) {
+            return this;
+        }
+
+        if (!host.startsWith("http")) {
+            host = "//" + host;
+        }
+        if (!host.endsWith("/")) {
+            host = host + "/";
+        }
+        productIcon = host + productIcon;
+        return this;
+    }
 }

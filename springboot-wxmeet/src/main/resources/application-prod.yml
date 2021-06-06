@@ -15,7 +15,7 @@ spring:
 ##  path: /var/log/tomcat/
 #  file: /var/log/tomcat/sell.log
 #  level:
-#    com.imooc.LoggerTest: debug
+#    top.chendaye666.springbootwxmeet.LoggerTest: debug
 
 wechat:
   mpAppId: wxd898fcb01713c658
@@ -35,7 +35,7 @@ projectUrl:
   sell: http://sell.natapp4.cc
 logging:
   level:
-    com.imooc.dataobject.mapper: trace
+    top.chendaye666.springbootwxmeet.dataobject.mapper: trace
 mybatis:
   mapper-locations: classpath:mapper/*.xml
 

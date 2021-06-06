@@ -3,6 +3,7 @@ package top.chendaye666.springbootwxmeet.service;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import top.chendaye666.springbootwxmeet.dataobject.ProductInfo;
+import top.chendaye666.springbootwxmeet.dto.CartDTO;
 
 import java.util.List;
 
@@ -19,7 +20,15 @@ public interface ProductInfoService {
 
     ProductInfo save(ProductInfo productInfo);
 
-    //todo:上架
+    //加库存
+    void increaseStock(List<CartDTO> cartDTOList);
 
-    //todo: 下架
+    //减库存
+    void decreaseStock(List<CartDTO> cartDTOList);
+
+    //上架
+    ProductInfo onSale(String productId);
+
+    //下架
+    ProductInfo offSale(String productId);
 }
