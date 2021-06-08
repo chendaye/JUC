@@ -35,6 +35,7 @@ class OrderDetailRepositoryTest {
     @Test
     void findByOrderId() {
         List<OrderDetail> byOrderId = repository.findByOrderId("111");
-        assertNotEquals(0, byOrderId.size());
+//        assertNotEquals(0, byOrderId.size());
+        assertTrue(byOrderId.size() > 0, "通过ID查询订单");
     }
 }

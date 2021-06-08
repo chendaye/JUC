@@ -3,7 +3,8 @@ package top.chendaye666.springbootwxmeet.form;
 import lombok.Data;
 
 /**
- * 用于表单验证
+ * Created by 廖师兄
+ * 2017-07-23 21:43
  */
 @Data
 public class CategoryForm {
