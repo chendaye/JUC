@@ -40,3 +40,6 @@ code -> openid
 [官方文档](https://pay.weixin.qq.com/wiki)
 
 [轮子](https://github.com/Pay-Group/best/-pay-sdk)
+
+# 微信登录
+[官方文档](https://open.weixin.qq.com)

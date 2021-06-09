@@ -19,8 +19,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * Created by 廖师兄
- * 2017-07-30 17:31
+ * aop 切面，实现身份验证
  */
 @Aspect
 @Component
