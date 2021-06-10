@@ -43,3 +43,46 @@ code -> openid
 
 # 微信登录
 [官方文档](https://open.weixin.qq.com)
+
+# websocket
+
+> 前后端连接，主动通信。 前端连接上后端的websocket，后端主动通过websocket发送消息
+
+> 采用ws协议
+
+# 压测工具 Apache ab
+
+![Apache ab](./doc/img_04.png )
+
+# redis
+
+[redis 中文](http://redis.cn/)
+
+## 分布式锁 SETNX
+
+## 缓存
+
+![Redis 缓存注解](./doc/img_05.png )
+
+# 项目部署
+![部署](./doc/img_06.png )
+
+![参数](./doc/img_07.png )
+
+
+![参数](./doc/img_08.png )
+
+centos7 service
+
+# 课程总结
+
+![参数](./doc/img_09.png )
+
+# 进阶：Spring Cloud 
+
+![微服务要素](./doc/img_10.png )
+
+
+# 抓包
+
+> charles
