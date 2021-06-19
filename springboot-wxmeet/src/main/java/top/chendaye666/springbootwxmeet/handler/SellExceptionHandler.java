@@ -1,11 +1,11 @@
 package top.chendaye666.springbootwxmeet.handler;
 
-import top.chendaye666.springbootwxmeet.VO.ResultVO;
+import top.chendaye666.springbootwxmeet.vo.ResultVo;
 import top.chendaye666.springbootwxmeet.config.ProjectUrlConfig;
 import top.chendaye666.springbootwxmeet.exception.ResponseBankException;
 import top.chendaye666.springbootwxmeet.exception.SellException;
 import top.chendaye666.springbootwxmeet.exception.SellerAuthorizeException;
-import top.chendaye666.springbootwxmeet.utils.ResultVOUtil;
+//import top.chendaye666.springbootwxmeet.utils.ResultVOUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -38,8 +38,8 @@ public class SellExceptionHandler {
 
     @ExceptionHandler(value = SellException.class)
     @ResponseBody
-    public ResultVO handlerSellerException(SellException e) {
-        return ResultVOUtil.error(e.getCode(), e.getMessage());
+    public ResultVo handlerSellerException(SellException e) {
+        return ResultVo.createByErrorCodeMessage(e.getCode(), e.getMessage());
     }
 
     @ExceptionHandler(value = ResponseBankException.class)

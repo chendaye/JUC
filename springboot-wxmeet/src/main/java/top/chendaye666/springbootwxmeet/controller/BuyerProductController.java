@@ -50,11 +50,11 @@ public class BuyerProductController {
                     productInfoVoList.add(productInfoVo);
                 }
             }
-            productVo.setProductInfoVosVoList(productInfoVoList);
+//            productVo.setProductInfoVosVoList(productInfoVoList);
             productVoList.add(productVo);
         }
 
-        ResultVo<List<ProductVo>> resp = ResultVo.successMsgData("成功", productVoList);
+        ResultVo<List<ProductVo>> resp = ResultVo.createBySuccess("成功", productVoList);
         return resp;
     }
 }

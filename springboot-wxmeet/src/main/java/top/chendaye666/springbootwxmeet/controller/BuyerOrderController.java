@@ -55,7 +55,7 @@ public class BuyerOrderController {
         Map<String, String> map = new HashMap<>();
         map.put("orderId", createResult.getOrderId());
 
-        return ResultVo.successData(map);
+        return ResultVo.createBySuccess(map);
     }
 
     //订单列表
@@ -71,7 +71,7 @@ public class BuyerOrderController {
         PageRequest request = PageRequest.of(page, size);
         Page<OrderDTO> orderDTOPage = orderService.findList(openid, request);
 
-        return ResultVo.successData(orderDTOPage.getContent());
+        return ResultVo.createBySuccess(orderDTOPage.getContent());
     }
 
 
@@ -80,7 +80,7 @@ public class BuyerOrderController {
     public ResultVo<OrderDTO> detail(@RequestParam("openid") String openid,
                                      @RequestParam("orderId") String orderId) {
         OrderDTO orderDTO = buyerService.findOrderOne(openid, orderId);
-        return ResultVo.successData(orderDTO);
+        return ResultVo.createBySuccess(orderDTO);
     }
 
     //取消订单
@@ -88,6 +88,6 @@ public class BuyerOrderController {
     public ResultVo cancel(@RequestParam("openid") String openid,
                            @RequestParam("orderId") String orderId) {
         buyerService.cancelOrder(openid, orderId);
-        return ResultVo.success();
+        return ResultVo.createBySuccess();
     }
 }

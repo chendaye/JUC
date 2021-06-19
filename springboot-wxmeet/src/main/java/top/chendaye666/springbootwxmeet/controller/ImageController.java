@@ -1,9 +1,8 @@
 package top.chendaye666.springbootwxmeet.controller;
 
 import com.UpYun;
-import top.chendaye666.springbootwxmeet.VO.ResultVO;
+import top.chendaye666.springbootwxmeet.vo.ResultVo;
 import top.chendaye666.springbootwxmeet.config.UpYunConfig;
-import top.chendaye666.springbootwxmeet.utils.ResultVOUtil;
 import com.upyun.UpException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,13 +28,13 @@ public class ImageController {
     private UpYunConfig upYunConfig;
 
     @PostMapping("/upload")
-    public ResultVO upload(@RequestParam("file_data") MultipartFile multipartFile) throws IOException, UpException {
+    public ResultVo<Map> upload(@RequestParam("file_data") MultipartFile multipartFile) throws IOException, UpException {
         UpYun upyun = new UpYun(upYunConfig.getBucketName(), upYunConfig.getUsername(), upYunConfig.getPassword());
         String fileName = String.format("%s.%s", UUID.randomUUID().toString(), multipartFile.getOriginalFilename().substring(multipartFile.getOriginalFilename().lastIndexOf(".") + 1));
         upyun.writeFile(fileName, multipartFile.getInputStream(), true, new HashMap<>());
 
         Map map = new HashMap<>();
         map.put("fileName", fileName);
-        return ResultVOUtil.success(map);
+        return ResultVo.createBySuccess(map);
     }
 }

@@ -13,7 +13,7 @@ import java.math.BigDecimal;
  * 2017-05-12 14:25
  */
 @Data
-public class ProductInfoVO implements Serializable {
+public class ProductInfoVo implements Serializable {
 
     // 序列化需要一个唯一ID，Serializable
     private static final long serialVersionUID = -3895834204864685262L;

@@ -12,7 +12,7 @@ import java.util.List;
  * 2017-05-12 14:20
  */
 @Data
-public class ProductVO implements Serializable {
+public class ProductVo implements Serializable {
 
     private static final long serialVersionUID = 7097863777546530545L;
 
@@ -23,5 +23,5 @@ public class ProductVO implements Serializable {
     private Integer categoryType;
 
     @JsonProperty("foods")
-    private List<ProductInfoVO> productInfoVOList;
+    private List<ProductInfoVo> productInfoVOList;
 }
